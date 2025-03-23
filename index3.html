@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!-- Mirrored from bitneo.top/?a=signup by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 04 Sep 2021 17:58:56 GMT -->
+<!-- Added by HTTrack -->
+<!-- Mirrored from www.webguru.top/bitpro/indexcca3.html?a=signup by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 28 Jun 2022 09:26:47 GMT -->
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Kennistech Currency Converter</title>
+    <base  src="index-2.html" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/icomoon.min.css">
+    <link rel="stylesheet" href="assets/css/bitneo-style.css">
+    <script src="assets/js/jquery-2.1.4.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="assets/img/favicon.png">
+</head>
+
+<body>
+    <div class="wrapper bg_gradient">
+        <div class="nk-ovm nk-ovm-repeat nk-ovm-fixed shape-i">
+        </div>
+        <div class="nk-ovm shape-z"></div>
+        <section class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="index.html?a=home" class="logo">
+                        <img src="assets/img/logo1.png" alt="TopTosi">
+                    </a>
+                    <div class="telegram">
+                        <img src="assets/img/telegram.svg"> <a href="#"> Telegram </a>
+                    </div>
+                    <ul class="menu__main">
+                        <li>
+                            <a href="index.html" class="menu__link">
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="menu__link">
+                                Terms
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="menu__link">
+                                FAQs
+                            </a>
+                        </li>
+                        <li>
+                            <a href="index.html" class="menu__link pr-0">
+                                Contact Us
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="head__btn">
+                                                    <a href="index2.html" class="btn__login"> Login </a>
+                            <a href="index3.html" class="btn__signup"> Signup </a>
+                                            </div>
+                </div>
+            </div>
+        </section>
+
+
+<section class="page">
+    <div class="container">
+        <div class="page__inner">
+            <div class="main__title mt-0 mb-0">
+                <span>Create Account</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+    <script language=javascript>
+        function checkform() {
+            if (document.regform.fullname.value == '') {
+                alert("Please enter your full name!");
+                document.regform.fullname.focus();
+                return false;
+            }
+        
+                
+            if (document.regform.username.value == '') {
+                alert("Please enter your username!");
+                document.regform.username.focus();
+                return false;
+            }
+            if (!document.regform.username.value.match(/^[A-Za-z0-9_\-]+$/)) {
+                alert("For username you should use English letters and digits only!");
+                document.regform.username.focus();
+                return false;
+            }
+            if (document.regform.password.value == '') {
+                alert("Please enter your password!");
+                document.regform.password.focus();
+                return false;
+            }
+            if (document.regform.password.value != document.regform.password2.value) {
+                alert("Please check your password!");
+                document.regform.password2.focus();
+                return false;
+            }
+        
+                
+            if (document.regform.email.value == '') {
+                alert("Please enter your e-mail address!");
+                document.regform.email.focus();
+                return false;
+            }
+            if (document.regform.email.value != document.regform.email1.value) {
+                alert("Please retype your e-mail!");
+                document.regform.email.focus();
+                return false;
+            }
+
+            for (i in document.regform.elements) {
+                f = document.regform.elements[i];
+                if (f.name && f.name.match(/^pay_account/)) {
+                    if (f.value == '') continue;
+                    var notice = f.getAttribute('data-validate-notice');
+                    var invalid = 0;
+                    if (f.getAttribute('data-validate') == 'regexp') {
+                        var re = new RegExp(f.getAttribute('data-validate-regexp'));
+                        if (!f.value.match(re)) {
+                            invalid = 1;
+                        }
+                    } else if (f.getAttribute('data-validate') == 'email') {
+                        var re = /^[^\@]+\@[^\@]+\.\w{2,4}$/;
+                        if (!f.value.match(re)) {
+                            invalid = 1;
+                        }
+                    }
+                    if (invalid) {
+                        alert('Invalid account format. Expected ' + notice);
+                        f.focus();
+                        return false;
+                    }
+                }
+            }
+
+            if (document.regform.agree.checked == false) {
+                alert("You have to agree with the Terms and Conditions!");
+                return false;
+            }
+
+            return true;
+        }
+
+        function IsNumeric(sText) {
+            var ValidChars = "0123456789";
+            var IsNumber = true;
+            var Char;
+            if (sText == '') return false;
+            for (i = 0; i < sText.length && IsNumber == true; i++) {
+                Char = sText.charAt(i);
+                if (ValidChars.indexOf(Char) == -1) {
+                    IsNumber = false;
+                }
+            }
+            return IsNumber;
+        }
+    </script>
+
+
+
+
+
+
+<section class="login">
+    <div class="container">
+
+                <div class="login__inner">
+
+
+            <form method=post onsubmit="return checkform()" name="regform" class="auth__form" action="#"><input type="hidden" name="form_id" >
+                <div class="login1 sign">
+
+                    <div class="signup">
+                        <div class="signup__left">
+                            <div class="d-flex justify-content-center">
+                                <div class="login__ic">
+                                    <i class="icon-user"></i>
+                                </div>
+                            </div>
+                            <div class="login__title">
+                                Account Information
+                            </div>
+                            <div class="auth__input">
+                                <label>Fullname</label>
+                                <input type="text" name=fullname value=""
+                                    class="auth__input--input">
+
+                            </div>
+                            <div class="auth__input">
+                                <label>Username</label>
+                                <input type="text" name=username value=""
+                                    class="auth__input--input">
+
+                            </div>
+                            <div class="auth__input">
+                                <label>Password</label>
+                                <input type="password" name=password value=""
+                                    class="auth__input--input">
+
+                            </div>
+                            <div class="auth__input">
+                                <label>Confirm Password</label>
+                                <input type="password" name=password2 value=""
+                                    class="auth__input--input">
+
+                            </div>
+                            <div class="auth__input">
+                                <label>Email</label>
+                                <input type="email" name=email value=""
+                                    class="auth__input--input">
+
+                            </div>
+                            <div class="auth__input">
+                                <label>Confirm Email</label>
+                                <input type="email" name=email1 value=""
+                                    class="auth__input--input">
+
+                            </div>
+                        </div>
+                        
+                    </div>
+
+                </div>
+                <div class="login__box sign" style="margin-top: 20px;">
+                    <div class="auth__upline">
+                    
+                    </div>
+                    <div class="auth__agree">
+                        <input type="checkbox" name=agree value=1 >
+                        <span>I agree with <a href="#">Term of Service</a></span>
+                    </div>
+                    <div class="auth__input create">
+                        <input type="submit" class="auth__btn" value="SIGNUP">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="footer">
+    <div class="container">
+        
+            <div class="footer__top">
+                <div class="pays__content">
+                    <div class="pays__text">
+                        We Accept <span>Most Popular</span> Currency</span> 
+                    </div>
+                    <div class="pays__item">
+                        <img src="assets/img/btc.png" alt="Bitcoin">
+                        <img src="assets/img/eth.png" alt="Ethereum">
+                        <img src="assets/img/ltc.png" alt="Litecoin">
+                        <img src="assets/img/trx.png" alt="Tron">
+                        <img src="assets/img/doge.png" alt="DogeCoin">
+                        <img src="assets/img/bnb.png" alt="Binance Coin">
+                        <img src="assets/img/pm.png" alt="PerfectMoney">
+                    </div>
+                </div>
+            </div>
+            <div class="f__logo">
+                <img src="assets/img/logo1.png">
+            </div>
+            <div class="footer__mid">
+                <div class="finfo">
+                    <div class="finfo__icon">
+                        <i class="icon-location3"></i>
+                    </div>
+                    <div class="finfo__title">
+                        <p>Orita-Challenge, Ibadan, Oyo State, Nigeria.</p>
+                    </div>
+                </div>
+                <div class="finfo">
+                    <div class="finfo__icon">
+                        <i class="icon-phone2"></i>
+                    </div>
+                    <div class="finfo__title">
+                        <p>+2347032783760</p>
+                    </div>
+                </div>
+                <div class="finfo">
+                    <div class="finfo__icon">
+                        <i class="icon-mention"></i>
+                    </div>
+                    <div class="finfo__title">
+                        <p>babalolakehinde33@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer__bot">
+                <div class="copyright">
+                    &copy; 2025. <strong>   Kennistech </strong>. All Rights Reserved.
+                </div>
+                <div class="terms__link">
+                    <a href="#">Terms of Services</a>
+                    <a href="https://kennistech.vercel.app/">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+
+
+</section>
+</div>
+</body>
+
+
+
+</html>
