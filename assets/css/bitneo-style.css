@@ -104,7 +104,7 @@ p {
 
 .container {
     max-width: 1170px;
-    width: 1170px !important;
+    width: 1000px !important;
 }
 
 .alert {
