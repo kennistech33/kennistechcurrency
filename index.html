@@ -107,33 +107,39 @@
                 <div class="login__title">
                     Kennistech Currency Converter
                 </div>
-               
-                <div class="container">
+                 <form method=post action="#" name=mainform  class="auth__form"><input type="hidden" name="form_id" ><input type="hidden" name="form_token" value="6e5c2ec02e177e8b273390df244b61fe">
+                    <input type=hidden name=a value='do_login'>
+                    <input type=hidden name=follow value=''>
+                    <input type=hidden name=follow_id value=''>
                     <div class="auth__input">
-                        <label>Amount:</label>
-                        <input type="number" id="amount" placeholder="Enter amount" value="1">
-                    </div>
-
-                    <div class="auth__input">
-                        <label>From:</label>
-                    <select id="fromCurrency"></select>
-    
+                        <label>Amount</label>
+                        <input type="text" class="auth__input--input" name=username
+                            value='1' placeholder="Enter Amount" id="amount">
+                       
                     </div>
                     <div class="auth__input">
-                        <label>To:</label>
+                        <label>From</label>
+                        <select id="fromCurrency"></select>
+                    </div>
+                    <div class="auth__input">
+                        <label>To</label>
                         <select id="toCurrency"></select>
+<!-- <input type="password" name="password" value='' class="auth__input--input"> -->
+                        
+                    </div>
+                    <div class="auth__input">
+                        <!-- <input type="submit" class="auth__btn" value="Login" style="width:100%"> -->
+                       
+                       
                     </div>
                     
-                    <button onclick="convertCurrency()">Convert</button>
-    
-                    <h3 id="result"></h3>
-                </div>
-    
+                </form>
+                <button onclick="convertCurrency()" style="width:50%">Convert</button>
+                <h3 id="result"></h3>
             </div>
         </div>
     </div>
 </section>
-
 
 
 
