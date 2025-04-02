@@ -24,6 +24,7 @@
 
                 fromSelect.value = "USD";  // Default selection
                 toSelect.value = "EUR";   // Default selection
+                     toSelect.value = "NGN";   // Default selection
             } catch (error) {
                 console.error("Error fetching exchange rates:", error);
             }
